@@ -3,3 +3,20 @@
 alias config="git --git-dir=$HOME/.cfg/ --work-tree=$HOME"
 
 config config --local status.showUntrackedFiles no
+
+alias ..="cd .."
+alias ...="cd ../.."
+alias ....="cd ../../.."
+
+alias ls="ls -al --color=auto"
+
+alias gs="git status"
+alias ga="git add"
+alias gc="git commit"
+alias gco="git checkout"
+alias gco="git checkout"
+alias gd="git diff"
+alias gdc="git diff --cached"
+
+alias reload=". ~/.bashrc"
+alias r="history | grep"

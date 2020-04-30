@@ -1,0 +1,7 @@
+#!/bin/sh
+
+# Weather forecast for Osiek Jasielski (Poland)
+
+DATE=`date +%Y%m%d`
+
+curl "http://www.meteo.pl/um/metco/mgram_pict.php?ntype=0u&fdate=${DATE}12&row=477&col=260&lang=pl" -s -o - | prev-image-stdin

@@ -1,3 +1,5 @@
+# .dotfiles
+
 ## `bin/`
 
 ### [`mkstruct`](bin/mkstruct)

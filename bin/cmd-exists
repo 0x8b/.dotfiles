@@ -1,0 +1,5 @@
+#!/bin/sh
+
+[[ ! $# -eq 1 ]] && echo "usage: $(basename $0) command"
+
+command -v $1 > /dev/null 2>&1

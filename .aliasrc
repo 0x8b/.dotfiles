@@ -20,7 +20,3 @@ alias gdc="git diff --cached"
 
 alias reload=". ~/.bashrc"
 alias r="history | grep"
-
-mkcd() {
-  mkdir -p "$1" && cd "$1" || exit
-}

@@ -1,0 +1,3 @@
+#!/bin/sh
+
+python -m pyperclip --paste | sed "s/\r\r\n/\n/" > $1

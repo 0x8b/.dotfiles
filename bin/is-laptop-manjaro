@@ -1,0 +1,5 @@
+#!/bin/sh
+
+[[ -f ~/.islaptopmanjaro ]] && exit 0
+
+exit 1

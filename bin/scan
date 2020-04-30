@@ -1,0 +1,5 @@
+#!/bin/sh
+
+if is-laptop-manjaro; then
+    exec scanimage --format=png --device "hpaio:/usb/Deskjet_1050_J410_series?serial=CN07D21H5N05HW" --resolution 300 --mode Color --o $1
+fi

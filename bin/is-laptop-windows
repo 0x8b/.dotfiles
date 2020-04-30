@@ -1,0 +1,5 @@
+#!/bin/sh
+
+[[ -f ~/.islaptopwindows ]] && exit 0
+
+exit 1

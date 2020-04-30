@@ -1,0 +1,20 @@
+# search hidden files and directories
+--hidden
+
+# follow symbolic links
+--follow
+
+--no-ignore
+
+--glob=!{.git,node_modules}
+--glob=!*.{lock}
+--glob=!{package-lock.json}
+
+--smart-case
+
+--colors=path:bg:white
+--colors=path:fg:black
+--colors=line:fg:0x00,0xff,0x00
+--colors=match:bg:0x00,0xff,0x00
+--colors=match:fg:black
+--colors=match:style:nobold

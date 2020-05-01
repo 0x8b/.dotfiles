@@ -3,5 +3,12 @@
 # Weather forecast for Osiek Jasielski (Poland)
 
 DATE=`date +%Y%m%d`
+TIME=`date +%H%M%S`
 
-curl "http://www.meteo.pl/um/metco/mgram_pict.php?ntype=0u&fdate=${DATE}12&row=477&col=260&lang=pl" -s -o - | prev-image-stdin
+if [ "$TIME" -lt "120000" ]; then
+  HOUR="00"
+else
+  HOUR="12"
+fi
+
+curl "http://www.meteo.pl/um/metco/mgram_pict.php?ntype=0u&fdate=${DATE}${HOUR}&row=477&col=260&lang=pl" -s -o - | prev-image-stdin

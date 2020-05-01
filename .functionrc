@@ -1,7 +1,17 @@
 mkcd() {
-  mkdir -p "$1" && cd "$1" || exit
+  mkdir -p "$1" && cd "$1"
 }
 
 public-key() {
   cat ~/.ssh/id_rsa.pub | python -m pyperclip --copy
+}
+
+o() {
+  if cmd-exists explorer; then
+    if [ $# -eq 0 ]; then
+      explorer .
+    else
+      explorer "$@"
+    fi
+  fi
 }

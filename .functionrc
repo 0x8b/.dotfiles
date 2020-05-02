@@ -17,3 +17,8 @@ o() {
     fi
   fi
 }
+
+gcm() {
+  m="$@"
+  git commit -m "$m"
+}
